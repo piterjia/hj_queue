@@ -1,55 +1,57 @@
 # hj_queue
 c语言实现的强大队列缓存：
+
 包括的功能主要用：
-（1）可以存储任何数据，基本类型，自定义类型等；
 
-（2）包含的函数如下：
+1、可以存储任何数据，基本类型，自定义类型等；
 
-//create queue
+2、包含的函数以及功能如下：
+
+（1）//create queue
 
 FT_QUE_PTR MMIFT_QueCreate(uint32 len, DestructElement func);
 
-//empty queue
+（2）//empty queue
 
 BOOLEAN MMIFT_QueEmpty(FT_QUE_PTR queue_ptr);
 
-//destroy queue
+（3）//destroy queue
 
 BOOLEAN MMIFT_QueDestory(FT_QUE_PTR queue_ptr);
 
-//get element of queue
+（4）//get element of queue
 
 uint32 MMIFT_QueGetAt(FT_QUE_PTR queue_ptr, uint32 index);
 
-//append element of queue in the front
+（5）//append element of queue in the front
 
 BOOLEAN MMIFT_QueFrontAppend(FT_QUE_PTR queue_ptr, uint32 elem);
 
-//append element of queue in the rear
+（6）//append element of queue in the rear
 
 BOOLEAN MMIFT_QueRearAppend(FT_QUE_PTR queue_ptr, uint32 elem);
 
-//get the elem num of the queue
+（7）//get the elem num of the queue
 
 uint32 MMIFT_QueGetElemNum(FT_QUE_PTR queue_ptr);
 
-//get queue total length(capacity)
+（8）//get queue total length(capacity)
 
 uint32 MMIFT_QueGetCapacity(FT_QUE_PTR queue_ptr);
 
-//is queue full
+（9）//is queue full
 
 BOOLEAN MMIFT_QueIsFull (FT_QUE_PTR queue_ptr);
 
-//is queue empty
+（10）//is queue empty
 
 BOOLEAN MMIFT_QueIsEmpty (FT_QUE_PTR queue_ptr);
 
-//get the front of the queue
+（11）//get the front of the queue
 
 uint32 MMIFT_QueFrontGet (FT_QUE_PTR queue_ptr);
 
 
-//get the rear of the queue
+（12）//get the rear of the queue
 
 uint32 MMIFT_QueRearGet (FT_QUE_PTR queue_ptr);
