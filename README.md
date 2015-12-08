@@ -2,7 +2,8 @@
 c语言实现的强大队列缓存：
 包括的功能主要用：
 （1）可以存储任何数据，基本类型，自定义类型等
-（2）
+（2）包含的函数有：
+
 /*****************************************************************************/
 //  Description :  create queue
 //  Global resource dependence :
@@ -10,6 +11,7 @@ c语言实现的强大队列缓存：
 //  Note:
 /*****************************************************************************/
 FT_QUE_PTR MMIFT_QueCreate(uint32 len, DestructElement func);
+
 
 /*****************************************************************************/
 //  Description :  empty queue
@@ -88,7 +90,7 @@ BOOLEAN MMIFT_QueIsEmpty (FT_QUE_PTR queue_ptr);
 //  Description :  get the front of the queue
 //  Global resource dependence :
 //  Author: Hongjun.Jia
-//  Note: just for test
+//  Note: 
 /*****************************************************************************/
 uint32 MMIFT_QueFrontGet (FT_QUE_PTR queue_ptr);
 
